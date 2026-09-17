@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "domain": "freeinternships.in",
+    "url": "https://www.freeinternships.in/",
+    "audit_date": "2026-09-16",
+    "task_id": "DM-SEO-001",
+    "client": "Data Alcott Systems",
+    "pages_inspected": [
+      "https://www.freeinternships.in/",
+      "https://www.freeinternships.in/blog/index.php",
+      "https://www.freeinternships.in/free-online-digital-marketing-internship.php",
+      "https://www.freeinternships.in/digital-marketing-internship.php"
+    ],
+    "unverified_categories": ["Performance (Core Web Vitals)", "Structured Data"],
+    "scoring_note": "Health score computed on the five verified categories (80% of total weight), reweighted to 100. Unverified categories are excluded rather than estimated."
+  },
+  "summary": {
+    "health_score": 47,
+    "grade": "Needs Work",
+    "business_type": "Education / EdTech — free task-based online internship platform with certificate issuance, India, Chennai-based",
+    "top_findings": [
+      "Price contradiction: homepage states no registration fee; /digital-marketing-internship.php states a 499 rupee registration fee in the ribbon, stat block, testimonial and meta description",
+      "Brand misspelled as freeinternsios.in eight or more times on a live landing page",
+      "rel=canonical on the header-linked Digital Marketing page points at a different URL",
+      "Three parallel URL families for the same programs; header and footer link different URLs for the same program",
+      "Intern program requires scripted five-star Google reviews and daily link posting as a condition of certificate issuance"
+    ],
+    "quick_wins": [
+      "Find and replace freeinternsios.in with freeinternships.in",
+      "Cut the homepage title from 137 to about 60 characters",
+      "Delete the four livetrafficfeed.com footer widgets",
+      "Add noindex, follow to the 173 templated task-submission blog posts",
+      "Add FAQPage schema to the roughly 57 existing FAQs"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Content Quality & E-E-A-T",
+      "weight": 0.23,
+      "score": 38,
+      "verified": true,
+      "what_works": [
+        "Homepage 'What is Free Internship Online' section defines the offer and states a real differentiator",
+        "Roughly 57 FAQs across two pages, matched to genuine student questions",
+        "25 Career Tips roadmap articles are differentiated, useful content",
+        "QR-verified public certificate registry is a genuine competitive moat"
+      ],
+      "findings": [
+        {
+          "id": "C1",
+          "title": "Live landing page uses the wrong domain name throughout",
+          "severity": "Critical",
+          "description": "/digital-marketing-internship.php refers to the brand as freeinternsios.in in the eyebrow label, section H2, intro paragraph, three FAQ answers, the reviews subhead and the final CTA. Eight or more occurrences.",
+          "recommendation": "Find and replace across the codebase; check all {topic}-internship.php pages, which share the template."
+        },
+        {
+          "id": "C2",
+          "title": "The site contradicts itself on whether the internship is free",
+          "severity": "Critical",
+          "description": "Homepage: '100% Free Online Internship - No Registration Fee' and FAQ 'there are no hidden charges'. /digital-marketing-internship.php: 'Registration: 499 only', 'One-Time Registration Fee 499 only', a testimonial referencing the fee, and a meta description ending 'Register 499 only'. On a domain named freeinternships.in.",
+          "recommendation": "Decide the commercial model and state it identically everywhere. Either answer is defensible; having both is not."
+        },
+        {
+          "id": "C3",
+          "title": "Headline statistics disagree across pages",
+          "severity": "High",
+          "description": "Homepage: 25,000+ enrolled, 15,000+ certificates, 12+ domains. /digital-marketing-internship.php: 10,000+ enrolled, 500+ placed. /free-online-digital-marketing-internship.php: 11 domains. No source or date on any figure.",
+          "recommendation": "One source of truth rendered from a single include, with an 'as of' date. Delete unevidenced figures."
+        },
+        {
+          "id": "C4",
+          "title": "173 of 203 blog posts are templated near-duplicates",
+          "severity": "High",
+          "description": "Task submissions titled 'Task Submission - DAS00XXXX - <Project>' with a one-line templated body, cycling through a handful of project names (FreshBite, StyleHub, Recommendation Engine). 85% of the blog.",
+          "recommendation": "noindex, follow the task-submission template. Keep the pages for students and the public portfolio."
+        },
+        {
+          "id": "C5",
+          "title": "Unverifiable outcome claims undermine verified ones",
+          "severity": "High",
+          "description": "Three static five-star reviews naming students placed at Razorpay and Swiggy with LPA figures, on the same page as a live testimonial widget showing real, verifiable students with demo links.",
+          "recommendation": "Remove the static testimonials or replace them with entries from the verified pipeline. Drop employer names and salary figures unless each placement can be evidenced."
+        },
+        {
+          "id": "C6",
+          "title": "Off-topic social proof on Digital Marketing pages",
+          "severity": "Medium",
+          "description": "Every testimonial in the carousel on both Digital Marketing pages is from a Web Development intern.",
+          "recommendation": "Filter the carousel by the page's domain."
+        },
+        {
+          "id": "C7",
+          "title": "Blog index renders empty and duplicated entries",
+          "severity": "Medium",
+          "description": "Empty category 'How I Completed My Task - 0' linked sitewide; the same featured article rendered twice; the same Recent Post rendered twice.",
+          "recommendation": "Suppress zero-count categories; de-duplicate the featured and recent queries."
+        },
+        {
+          "id": "C8",
+          "title": "Numbered list skips an item",
+          "severity": "Low",
+          "description": "Homepage 'Why freeinternships.in' block runs 01, 02, 03, 04, 06.",
+          "recommendation": "Restore or renumber."
+        }
+      ]
+    },
+    {
+      "name": "Technical SEO",
+      "weight": 0.22,
+      "score": 45,
+      "verified": true,
+      "what_works": [
+        "Homepage indexed and crawled within roughly one day",
+        "https://www. used consistently; homepage self-canonicalises correctly",
+        "HTTPS and correct viewport meta on every page inspected",
+        "Homepage robots meta well configured with max-snippet:-1 and max-image-preview:large",
+        "Geo meta set for Chennai, appropriate given the Chennai landing pages"
+      ],
+      "findings": [
+        {
+          "id": "T1",
+          "title": "Canonical points the header-linked landing page at a different URL",
+          "severity": "Critical",
+          "description": "/free-online-digital-marketing-internship.php declares rel=canonical and og:url pointing to /digital-marketing-internship.php. Every header link on the site points at a URL the site asks Google not to index.",
+          "recommendation": "Choose one URL, self-canonicalise it, 301 the other, update the navigation."
+        },
+        {
+          "id": "T2",
+          "title": "Three parallel URL families for the same programs",
+          "severity": "Critical",
+          "description": "free-online-{topic}-internship.php (header), free-{topic}-internship.php (footer), and {topic}-internship.php (cross-links and canonical targets) are all live. Confirmed distinct and live for Digital Marketing; same pattern visible for six other programs.",
+          "recommendation": "Standardise on free-{topic}-internship.php. 301 the other two families. Merge paired content into one page."
+        },
+        {
+          "id": "T3",
+          "title": "The canonical target has no canonical tag and no social markup",
+          "severity": "High",
+          "description": "/digital-marketing-internship.php ships with no rel=canonical, no Open Graph tags and no twitter:card, despite receiving canonical authority from T1.",
+          "recommendation": "Add a self-referencing canonical and the full Open Graph and Twitter set."
+        },
+        {
+          "id": "T4",
+          "title": "Header and footer link different URLs for the same program",
+          "severity": "High",
+          "description": "Header links free-online-{topic}, footer links free-{topic}. Sitewide internal link equity is split across two destination sets.",
+          "recommendation": "One canonical URL per program in header, footer, body and sitemap."
+        },
+        {
+          "id": "T5",
+          "title": "Inconsistent internal paths, likely 404s",
+          "severity": "Medium",
+          "description": "/project.php (header) versus /projects.php (homepage body); /contact.php (FAQ) versus /contact-us.php (footer). Both pairs cannot be correct.",
+          "recommendation": "Crawl, resolve the correct path for each, update links, 301 the loser."
+        },
+        {
+          "id": "T6",
+          "title": "Blog assets loaded via path traversal",
+          "severity": "Medium",
+          "description": "Blog header loads /blog/../assets/logo_1781240375.png, creating a second URL for the same asset and defeating cache reuse.",
+          "recommendation": "Use root-relative paths sitewide."
+        },
+        {
+          "id": "T7",
+          "title": "Faceted blog URLs with no canonical",
+          "severity": "Medium",
+          "description": "/blog/index.php generates crawlable combinations of section, category, subcategory, cert_category and page parameters, with no canonical tag.",
+          "recommendation": "Self-referencing canonical on the unfiltered URL; clean pagination; noindex, follow on filter combinations."
+        },
+        {
+          "id": "T8",
+          "title": "robots.txt and XML sitemap not verified",
+          "severity": "Info",
+          "description": "Neither file could be retrieved with the tooling available in this pass.",
+          "recommendation": "Open both in a browser; confirm 200, no blanket disallow, Sitemap directive present; audit sitemap URLs against the chosen canonical family; record GSC indexation counts."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "weight": 0.20,
+      "score": 55,
+      "verified": true,
+      "what_works": [
+        "Exactly one H1 on every page inspected",
+        "Program-page H1s written in real query language",
+        "Keyword targeting matched to genuine long-tail student intent",
+        "Footer 'Popular Internship Pages' is a well-built long-tail hub",
+        "og:image and twitter:card correctly set on the homepage"
+      ],
+      "findings": [
+        {
+          "id": "O1",
+          "title": "Homepage title is about 137 characters",
+          "severity": "High",
+          "description": "Three pipe-separated clauses; Google renders roughly the first 60. The meta description runs about 230 characters and ends in a keyword list.",
+          "recommendation": "Title: 'Free Online Internship with Certificate 2026 | FreeInternships.in' (64 chars). Description: about 155 characters, ending in a sentence."
+        },
+        {
+          "id": "O2",
+          "title": "The blog has no SEO identity",
+          "severity": "High",
+          "description": "Title 'DATA ALCOTT SYSTEMS - Professional Internship Platform' and description 'Free task-based online internship program with DATA ALCOTT SYSTEMS', inherited by every faceted blog URL because the index has no canonical.",
+          "recommendation": "Distinct title and description for the blog index and each category view."
+        },
+        {
+          "id": "O3",
+          "title": "Keyword stuffing in meta keywords",
+          "severity": "Medium",
+          "description": "Sitewide meta keywords tag; 21 phrases on the homepage, 12 on the Digital Marketing page, several near-identical restatements.",
+          "recommendation": "Remove the tag sitewide."
+        },
+        {
+          "id": "O4",
+          "title": "Heading hierarchy skips levels",
+          "severity": "Medium",
+          "description": "Homepage jumps H1 to H4 before its first H2; feature cards use H4 under H2 with no H3. Same pattern on the Digital Marketing task page.",
+          "recommendation": "H1, then H2 for sections, H3 for sub-blocks. No skipping."
+        },
+        {
+          "id": "O5",
+          "title": "Emoji in H1 and title tags",
+          "severity": "Medium",
+          "description": "H1 reads '\ud83c\udfaf 100% Free Online Digital Marketing Internship'. Google strips most emoji from SERP display.",
+          "recommendation": "Keep emoji in body UI; remove from title, H1 and H2."
+        },
+        {
+          "id": "O6",
+          "title": "Title and og:title diverge",
+          "severity": "Low",
+          "description": "The title ends '| 11 Domains'; the og:title does not.",
+          "recommendation": "Align them."
+        },
+        {
+          "id": "O7",
+          "title": "Best content asset is orphaned",
+          "severity": "Medium",
+          "description": "The 25 roadmap articles are reachable only from the blog index and sidebar, and are not linked from any program page.",
+          "recommendation": "Build a roadmap hub; cross-link each roadmap to its program page and back."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "weight": 0.10,
+      "score": 45,
+      "verified": true,
+      "what_works": [
+        "Roughly 57 FAQs in exactly the question-and-answer format AI systems prefer to cite"
+      ],
+      "findings": [
+        {
+          "id": "A1",
+          "title": "Contradictory facts make the site uncitable",
+          "severity": "High",
+          "description": "An AI system reading the site cannot state a price (free versus 499), cannot state an enrolment figure (25,000+ versus 10,000+), and encounters the domain written as freeinternsios.in on a live page.",
+          "recommendation": "Resolve C1, C2 and C3. Highest-leverage work in the audit for AI visibility and human trust alike."
+        },
+        {
+          "id": "A2",
+          "title": "FAQ corpus is strong but unexploited",
+          "severity": "Medium",
+          "description": "About 57 well-written FAQs trapped in JavaScript accordions with unverified structured data.",
+          "recommendation": "Confirm answers render in initial HTML; add FAQPage schema; publish the highest-intent ones as standalone articles."
+        },
+        {
+          "id": "A3",
+          "title": "No llms.txt",
+          "severity": "Low",
+          "description": "Not present or not verifiable.",
+          "recommendation": "Publish /llms.txt summarising the offer, domains, cost and key pages."
+        },
+        {
+          "id": "A4",
+          "title": "AI crawler access unverified",
+          "severity": "Info",
+          "description": "Cannot confirm whether robots.txt blocks GPTBot, ClaudeBot, PerplexityBot, Google-Extended or CCBot.",
+          "recommendation": "Check robots.txt and unblock unless blocking is deliberate."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "weight": 0.05,
+      "score": 70,
+      "verified": true,
+      "what_works": [
+        "Descriptive alt text on certificates, logo and blog thumbnails",
+        "Logo correctly alt-texted and linked to the homepage sitewide",
+        "YouTube thumbnails served at mqdefault/hqdefault rather than full resolution"
+      ],
+      "findings": [
+        {
+          "id": "I1",
+          "title": "Empty image source in the homepage lightbox",
+          "severity": "Medium",
+          "description": "Lightbox renders as <img alt=\"Enlarged image\" src=\"\">, causing the browser to re-request the page URL as an image.",
+          "recommendation": "Populate on open, or render the node only when the modal is triggered."
+        },
+        {
+          "id": "I2",
+          "title": "Testimonial avatars are third-party API calls",
+          "severity": "Medium",
+          "description": "Students without photos get avatars from ui-avatars.com, one cross-origin request per slide, on every page that renders the carousel.",
+          "recommendation": "Generate initials-avatars in CSS."
+        },
+        {
+          "id": "I3",
+          "title": "No image optimisation pipeline",
+          "severity": "Medium",
+          "description": "Student photos served from /uploads/ as original jpeg/png; certificate samples as full-size jpg. No WebP, no srcset, no dimension attributes.",
+          "recommendation": "WebP with fallback, 2-3 widths with srcset, explicit width and height, loading=lazy below the fold."
+        }
+      ]
+    },
+    {
+      "name": "Performance (Core Web Vitals)",
+      "weight": 0.10,
+      "score": null,
+      "verified": false,
+      "what_works": [
+        "Correct viewport meta on every page; responsive markup with a separate mobile navigation"
+      ],
+      "findings": [
+        {
+          "id": "P1",
+          "title": "Four third-party counter widgets load on every page",
+          "severity": "High",
+          "description": "livetrafficfeed.com Live Maps Visitor, Website Counter, Flag Counter and Live Traffic Stats appear in the footer sitewide.",
+          "recommendation": "Remove all four. Largest single performance win available."
+        },
+        {
+          "id": "P2",
+          "title": "Per-testimonial requests to an external avatar API",
+          "severity": "Medium",
+          "description": "Up to six cross-origin requests to ui-avatars.com per page render.",
+          "recommendation": "Replace with CSS initials."
+        },
+        {
+          "id": "P3",
+          "title": "Heavy homepage media without lazy loading or reserved space",
+          "severity": "Medium",
+          "description": "Roughly fifteen YouTube thumbnails plus two full-size certificate JPEGs, three banners and a logo, with no loading=lazy and no dimension attributes observed.",
+          "recommendation": "Lazy-load below the fold; set explicit dimensions."
+        },
+        {
+          "id": "P4",
+          "title": "Carousels and accordions are layout-shift risks",
+          "severity": "Medium",
+          "description": "Testimonial carousel, banner rotator, sticky bar, lightbox and a roughly 30-item FAQ accordion all initialise after first paint.",
+          "recommendation": "Reserve min-height on carousel and banner containers; render FAQ answers collapsed via CSS rather than injecting DOM."
+        },
+        {
+          "id": "P5",
+          "title": "Field and lab measurement not performed",
+          "severity": "Info",
+          "description": "Lighthouse, CrUX, PageSpeed Insights and GTmetrix were not available in this pass. Note that the task brief asks for FID, which Google retired on 12 March 2024 in favour of INP.",
+          "recommendation": "Run PageSpeed Insights mobile (3 runs, median) and GTmetrix with test location set to Chennai or Mumbai, on five URLs. Record LCP, INP, CLS and TTFB."
+        }
+      ]
+    },
+    {
+      "name": "Structured Data",
+      "weight": 0.10,
+      "score": null,
+      "verified": false,
+      "what_works": [],
+      "findings": [
+        {
+          "id": "S1",
+          "title": "JSON-LD not inspectable in this pass",
+          "severity": "Info",
+          "description": "No claim is made about what schema exists. Verify before acting.",
+          "recommendation": "Run the Rich Results Test and Schema Markup Validator on three URLs; cross-check GSC Enhancements."
+        },
+        {
+          "id": "S2",
+          "title": "Priority schema to implement once verified",
+          "severity": "Medium",
+          "description": "Organization with sameAs, FAQPage for the roughly 57 existing FAQs, Course per program, EducationalOccupationalCredential for the certificate, BreadcrumbList where breadcrumbs already render, VideoObject for the YouTube embeds.",
+          "recommendation": "Implement in that order. Do not add Review or AggregateRating until C5 is resolved, and do not set Course.isAccessibleForFree until C2 is resolved."
+        }
+      ]
+    }
+  ],
+  "off_page": {
+    "verified": false,
+    "note": "DR/DA and referring-domain data require Ahrefs or Moz. The qualitative findings below are grounded in the site's own markup and published program instructions.",
+    "findings": [
+      {
+        "id": "F1",
+        "title": "Program instructs interns to build links and reviews in ways that breach platform policy",
+        "severity": "Critical",
+        "description": "Interns must post a scripted five-star Google Maps review, update LinkedIn status, follow company pages and post a link to the site across four platforms six days a week, as conditions for unlocking the offer letter and certificate. Incentivised reviews breach Google's review policies; certificate-gated link posting at volume falls under link-scheme guidance. Risk falls partly on the interns' personal accounts.",
+        "recommendation": "Uncouple reviews from certificate issuance and remove the script. Replace daily link posting with a portfolio requirement: publish the project write-up on the intern's own blog or LinkedIn."
+      },
+      {
+        "id": "F2",
+        "title": "Brand entity signals are thin and partly mis-directed",
+        "severity": "High",
+        "description": "Only LinkedIn and YouTube are linked from the site despite the program requiring Instagram and Facebook activity. Brand is split between FreeInternships.in and Data Alcott Systems with no explicit statement of the relationship. The freeinternsios.in misspelling builds recognition for a non-existent domain.",
+        "recommendation": "Create and link Instagram, Facebook and X. Add all sameAs links to Organization schema. State the brand relationship on the About page. Fix the misspelling."
+      },
+      {
+        "id": "F3",
+        "title": "Low-value sitewide outbound links",
+        "severity": "Medium",
+        "description": "Four followed livetrafficfeed.com links in the footer of every page.",
+        "recommendation": "Remove them."
+      },
+      {
+        "id": "F4",
+        "title": "Real linkable assets are unused",
+        "severity": "Opportunity",
+        "description": "The public certificate verification registry, the intern talent directory and the 25 roadmap articles are all genuinely linkable and none is being promoted.",
+        "recommendation": "Pitch the verification tool to college placement cells and HR blogs; get listed in the free-internship roundup articles that already rank."
+      }
+    ]
+  },
+  "competitors": {
+    "tier_1_marketplaces": ["Internshala", "Unstop", "LinkedIn", "Naukri Campus", "Indeed", "Foundit"],
+    "tier_2_direct": ["CodSoft", "Oasis Infobyte", "Prodigy InfoTech", "Zidio Development", "InternshipGate", "Forage", "AICTE / TULIP", "EduSkills"],
+    "tier_3_content": ["theinternship.in", "traffictail.com", "thevistaacademy.com", "internshipuncle.in"],
+    "owned_differentiators": [
+      "QR-verified public certificate registry - unique in tier, under-promoted",
+      "Mentor-evaluated deliverables rather than auto-issued certificates",
+      "Certificate carries project name and evaluation score",
+      "Duration range from 15 days to 6 months",
+      "12+ domains including non-tech (HR, Finance, Logistics)"
+    ],
+    "competitive_losses": [
+      "The 499 rupee contradiction - every Tier 2 competitor is unambiguously free",
+      "No letter of recommendation - CodSoft offers one and students ask for it",
+      "No government or AICTE affiliation - AICTE/TULIP win on institutional trust"
+    ],
+    "keyword_gaps": [
+      "Comparison and evaluation queries (is a free internship certificate valid, how to verify an internship certificate, virtual internship vs online course)",
+      "Branch segmentation beyond CSE (ECE, IT, MCA, BCA, MBA, Mechanical, Civil)",
+      "City coverage beyond Chennai (Pune, Bangalore, Hyderabad, Delhi, Mumbai)",
+      "Roadmap hub - 25 existing articles are orphaned in a blog sidebar",
+      "Seasonal intent (summer internship 2026, winter internship, final-year internship)"
+    ]
+  },
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Find and replace freeinternsios.in with freeinternships.in",
+          "Decide the commercial model and state it identically everywhere",
+          "Standardise on one URL family; 301 the other two; merge paired content",
+          "Self-referencing canonicals plus full Open Graph on every surviving program page",
+          "Update header, footer and body cross-links to the single canonical URL per program",
+          "Uncouple Google reviews from certificate issuance; remove the script",
+          "Replace daily link posting with a portfolio publication requirement",
+          "Reconcile all headline statistics to one dated source of truth",
+          "Remove or replace the unverifiable static testimonials",
+          "Verify robots.txt, sitemap, Core Web Vitals, schema, 404s and backlinks"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Rewrite the homepage title to about 60 characters and the description to about 155",
+          "Give the blog its own title, description and canonical; noindex filter combinations",
+          "noindex, follow the 173 templated task-submission posts",
+          "Delete the four livetrafficfeed.com footer widgets",
+          "Remove meta keywords sitewide",
+          "Add width, height and loading=lazy to every image",
+          "Add Organization, FAQPage and BreadcrumbList schema",
+          "Fix heading hierarchy; remove emoji from title, H1 and H2",
+          "Filter the testimonial carousel by page domain",
+          "Replace ui-avatars.com with CSS initials",
+          "Fix the empty img src, the empty blog category, the duplicate cards and the missing list item"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Build a roadmap hub and cross-link it to program pages",
+          "Outreach to get listed in the free-internship roundup articles that already rank",
+          "Write the comparison content nobody in the tier has, anchored on certificate verification",
+          "Build branch landing pages beyond CSE where content is genuinely distinct",
+          "Pitch the verification tool to college placement cells and HR blogs",
+          "Create and link Instagram, Facebook and X profiles",
+          "Add Course and EducationalOccupationalCredential schema after the price question is settled",
+          "City pages beyond Chennai only with genuinely local substance",
+          "Seasonal content published ahead of each cycle"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Weekly: GSC duplicate-canonical count as the success metric for the URL consolidation",
+          "Weekly: GSC impressions, clicks and position for the three head keywords",
+          "Monthly: Core Web Vitals field data",
+          "Monthly: Google Business Profile review count, watching for bulk removals",
+          "Monthly: referring domains and anchor distribution",
+          "Quarterly: re-run the full audit"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "report": "FULL-AUDIT-REPORT.md",
+    "action_plan": "ACTION-PLAN.md",
+    "html_report": "seo-audit-report.html"
+  }
+}
