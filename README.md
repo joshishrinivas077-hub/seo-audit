@@ -76,4 +76,4 @@ Live inspection of rendered page content and delivered `<head>` markup for the h
 
 ---
 
-*Prepared by an intern on the Data Alcott Systems free Digital Marketing internship program.*
+
